@@ -146,7 +146,7 @@ apply_theme() {
     host_bg=colour254           # white
     status_right="︎#[fg=$time_date_fg,nobold]#{prefix_highlight} $right_separator %R $right_separator %a, %b %d #[fg=$host_bg]"
 
-    status_right="$status_right $right_separator_black#[fg=$host_fg,bg=$host_bg,bold] #h"
+    status_right="$status_right $right_separator_black#[fg=$host_fg,bg=$host_bg,bold] #h "
 
     if [ "$SHOW_BATTERY" = true ]; then
         status_right="$status_right $right_separator #{battery_icon} #{battery_percentage}"
