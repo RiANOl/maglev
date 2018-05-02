@@ -70,7 +70,7 @@ apply_theme() {
     session_symbol=''
 
     # panes
-    pane_border_fg=colour8 # gray
+    pane_border_fg=default # gray
     pane_active_border_fg=colour4 # blue
 
     tmux set -g pane-border-style fg=$pane_border_fg \; set -g pane-active-border-style fg=$pane_active_border_fg
@@ -110,7 +110,7 @@ apply_theme() {
     fi
     tmux set -g status-left-length 32 \; set -g status-left "$status_left"
 
-    window_status_fg=colour8 # gray
+    window_status_fg=default # gray
     window_status_bg=colour0 # dark gray
     window_status_format="#I #W"
     tmux setw -g window-status-style fg=$window_status_fg,bg=$window_status_bg \; setw -g window-status-format "$window_status_format"
@@ -138,7 +138,7 @@ apply_theme() {
     battery_full_fg=colour160   # red
     battery_empty_fg=colour254  # white
     battery_bg=colour160        # black
-    time_date_fg=colour8      # gray
+    time_date_fg=default      # gray
     time_date_bg=colour0 # dark gray
     whoami_fg=colour254         # white
     whoami_bg=colour160         # red
